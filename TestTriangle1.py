@@ -23,6 +23,7 @@ class TestTriangles(unittest.TestCase):
     def test_InvalidInput(self):
         self.assertEqual(classifyTriangle(201, 201, 201), 'InvalidInput1', "Should be 'InvalidInput1'") 
         self.assertEqual(classifyTriangle(0, 0, 0), 'InvalidInput2', "Should be 'InvalidInput2'")
+        self.assertEqual(classifyTriangle(1.1, 1.1, 1.1), 'InvalidInput3', "Should be 'InvalidInput3'")
         
         
 if __name__ == '__main__':
