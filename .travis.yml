@@ -11,6 +11,9 @@ addons:
  token: "team2-ssw567-triangle567"
  branches:
   - sonarcloud
+  sonarqube:
+    branches :
+    - DEV
 script:
   - python -m unittest TestTriangle1
   - sonar-scanner
