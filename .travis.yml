@@ -1,7 +1,19 @@
 language: python
 python:
  - "3.6"
-
-# command to run tests
 script:
  - python -m unittest TestTriangle1
+  - sonar-scanner
+
+# Add these lines after the install section 
+
+dist: trusty
+sudo: required
+
+addons:
+ sonarcloud:
+ organization: "team2-ssw567-triangle567"
+ token: "team2-ssw567-triangle567"
+ branches:
+ - sonarcloud
+
