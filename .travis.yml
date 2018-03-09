@@ -1,11 +1,6 @@
 language: python
 python:
- - "3.6"
-script:
- - python -m unittest TestTriangle1
-  - sonar-scanner
-
-# Add these lines after the install section 
+  - "3.6"
 
 dist: trusty
 sudo: required
@@ -16,4 +11,8 @@ addons:
  token: "team2-ssw567-triangle567"
  branches:
  - sonarcloud
+script:
+  - python -m unittest TestTriangle1
+  - sonar-scanner
+
 
