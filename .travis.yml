@@ -6,13 +6,11 @@ dist: trusty
 sudo: required
 
 addons:
- sonarcloud:
- organization: "team2-ssw567-triangle567"
- token: "team2-ssw567-triangle567"
- branches:
-  - sonarcloud
+sonarcloud:
+organization: "team2-ssw567-triangle567"
+token: 8c3ec90577583c2a3412b6367c5035cdef7c869a
+branches:
+- sonarcloud
 script:
-  - python -m unittest TestTriangle1
-  - sonar-scanner
-
-
+- python -m unittest TestTriangle1
+- sonar-scanner
